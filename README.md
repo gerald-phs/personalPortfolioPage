@@ -1,2 +1,2 @@
 # personalPortfolioPage
-Last RWD project!
+Last freeCodeCamp RWD Cert. project!
