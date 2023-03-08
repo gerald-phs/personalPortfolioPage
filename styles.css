@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*font-family: 'Baskervville', serif;
+font-family: 'Space Mono', monospace;*/
+@media screen and (max-width: 800px)
+{
+  html {
+    font-size: 12px;
+    z-index: 0;
+  }
+}
+
+body {
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  font-family: 'Space Mono', monospace;
+}
+
+
+.title {
+  display: inline-block;
+  font-size: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  left: 23.5vw;
+  top: 21vh;
+}
+
+
+.subtitle {
+  position: relative;
+  top: 120px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  font-style: italic;
+  text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.subtitle a {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle i {
+  font-size: 40px;
+  padding: 0;
+}
+
+a {
+  color: blue;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: red;
+  animation: pulse 0.5s;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.cube {
+  flex: 0.5;
+}
+
+figcaption {
+  text-align: center;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#navbar a {
+  font-size: 2rem;
+  justify-content: space-evenly;
+  flex: 1;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#navbar a {
+  justify-content: space-evenly;
+}
+
+#welcome-section {
+  height: 100vh;
+}
+
+/*
+
+
+
+
+
+
+Your #navbar element should contain at least one a element whose href attribute starts with #.
+Your portfolio should have an a element with an id of profile-link.
+
+Your #navbar element should always be at the top of the viewport.*/
